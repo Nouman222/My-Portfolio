@@ -1,0 +1,141 @@
+/* Nav */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  border-radius: 20px;
+  border: 1px solid;
+  background: #000;
+  color: white;
+  padding: 18px;
+  font-size: 18px;
+  position: absolute;
+  left: 250px;
+  top: 5px;
+  z-index: 10;
+}
+
+nav div {
+  font-size: 25px;
+  font-family: "Gill Sans", "Poppins";
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+nav div:hover {
+  background-color: orange;
+}
+
+nav ul {
+  font-family: "Gill Sans", "Poppins";
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  transition: 0.1s;
+}
+
+nav ul a:hover {
+  background-color: orange;
+}
+
+/* Cotact section */
+.contact {
+  width: 80%;
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+  margin: 130px auto 0px auto;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  color: #555;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  text-align: left;
+  max-width: 400px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+.whatsAppIcon{
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+ 
+  transform: translateY(-10px);
+}
+
+.whatsAppIcon {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  animation: floatMove 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes floatMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px); 
+  }
+}
